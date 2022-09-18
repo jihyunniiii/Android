@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- xml 파일 주석 처리 방법 : Ctrl + Shift + /-->
+
+<!--
+    Linear Layout : 연속적으로 버튼을 만들 경우 버튼을 순서대로 바로 옆에 만들어줌 (빈 공간을 채워넣는 형태) -> 직관적
+    Relative Layout : 맨 왼쪽 위를 기준으로 버튼이 만들어짐 (이전에 만들어진 것과 상관 없이 겹쳐져서 만들어짐 -> 왼쪽 위를 기준으로 위치 설정 가능)
+    Constraint Layout : 여러 개의 버튼을 만들 때 버튼 사이가 x 만큼 거리를 둔 후 만들어짐 (비례해서) -> 디바이스 크기가 바뀌는 경우에 유용함
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp">
+
+        <!--
+            match_parent : 가로 전체를 다 채우는 정도
+            wrap_content : 안에 있는 내용물을 다 감싸는 정도 (여기서는 120dp)
+        -->
+
+        <ImageView
+            android:id = "@+id/bts_image_1"
+            android:src="@drawable/bts_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id = "@+id/bts_image_2"
+            android:src="@drawable/bts_2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id = "@+id/bts_image_3"
+            android:src="@drawable/bts_3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp">
+
+        <ImageView
+            android:id = "@+id/bts_image_4"
+            android:src="@drawable/bts_4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id = "@+id/bts_image_5"
+            android:src="@drawable/bts_5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id = "@+id/bts_image_6"
+            android:src="@drawable/bts_6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp">
+
+        <ImageView
+            android:id = "@+id/bts_image_7"
+            android:src="@drawable/bts_7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
